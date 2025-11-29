@@ -1,20 +1,23 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+Live : https://redactionai.netlify.app/
 
-# Run and deploy your AI Studio app
+RedactAI - Intelligent Cybersecurity Redaction System
+Live Demo License React Gemini API
 
-This contains everything you need to run your app locally.
+RedactAI is a high-performance privacy protection engine built for the Cybersecurity Hackathon. It employs a hybrid architecture, orchestrating Google Gemini for semantic entity recognition and optimized Regex patterns for structured data validation. This ensures maximum recall and precision when redacting sensitive information from unstructured text streams.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1LqsStOr3qcvVX95IdljUG0sFmx_vmt13
-
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+redact-ai/
+├── src/
+│   ├── components/       # UI Components (atomic design)
+│   │   ├── AccuracyMetric.tsx  # Levenshtein visualization
+│   │   ├── EntityTable.tsx     # Data grid for entities
+│   │   └── RedactionPanel.tsx  # Main business logic container
+│   ├── services/
+│   │   └── geminiService.ts    # AI API abstraction layer
+│   ├── utils/
+│   │   └── textUtils.ts        # Core algo (LCS, Regex, Normalization)
+│   ├── types.ts          # TypeScript interfaces & Enums
+│   ├── App.tsx           # Root component
+│   └── index.tsx         # Entry point
+├── public/
+├── README.md
+└── package.json
