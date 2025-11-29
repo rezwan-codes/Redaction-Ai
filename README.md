@@ -1,4 +1,4 @@
-Live : https://redactionai.netlify.app/
+Live :https://shimmering-beignet-46b0d5.netlify.app/
 
 RedactAI - Intelligent Cybersecurity Redaction System
 Live Demo License React Gemini API
